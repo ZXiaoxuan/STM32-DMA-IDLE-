@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"dma\startup_stm32f103xe.o"
+"dma\main.o"
+"dma\gpio.o"
+"dma\dma.o"
+"dma\usart.o"
+"dma\stm32f1xx_it.o"
+"dma\stm32f1xx_hal_msp.o"
+"dma\stm32f1xx_hal_gpio_ex.o"
+"dma\stm32f1xx_hal_tim.o"
+"dma\stm32f1xx_hal_tim_ex.o"
+"dma\stm32f1xx_hal_uart.o"
+"dma\stm32f1xx_hal.o"
+"dma\stm32f1xx_hal_rcc.o"
+"dma\stm32f1xx_hal_rcc_ex.o"
+"dma\stm32f1xx_hal_gpio.o"
+"dma\stm32f1xx_hal_dma.o"
+"dma\stm32f1xx_hal_cortex.o"
+"dma\stm32f1xx_hal_pwr.o"
+"dma\stm32f1xx_hal_flash.o"
+"dma\stm32f1xx_hal_flash_ex.o"
+"dma\stm32f1xx_hal_exti.o"
+"dma\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "DMA\DMA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DMA.map" -o DMA\DMA.axf
